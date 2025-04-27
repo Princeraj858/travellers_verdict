@@ -258,7 +258,7 @@
     </footer>
 
     <script>
-        import BACKEND_URL from './config';
+       
         // Toggle Sidebar visibility
         function toggleSidebar() {
             const sidebar = document.getElementById('sidebar');
@@ -288,7 +288,7 @@
             }
 
             try {
-                const response = await fetch(`${BACKEND_URL}/profile`, {
+                const response = await fetch(`https://back-5-bolj.onrender.com/profile`, {
                     method: "GET",
                     headers: {
                         "Authorization": "Bearer " + token
