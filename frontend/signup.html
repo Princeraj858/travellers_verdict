@@ -130,6 +130,7 @@
     </div>
 
     <script>
+        import BACKEND_URL from './config';
         document.getElementById("signup-form").addEventListener("submit", function(event) {
             event.preventDefault(); 
 
@@ -147,7 +148,7 @@
         }
 
         // Send data to Flask backend
-        fetch("http://127.0.0.1:5000/signup", {
+        fetch(`${BACKEND_URL}/signup`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ name, email, password })
