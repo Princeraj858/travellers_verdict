@@ -68,7 +68,7 @@
   </div>
 
   <script>
-    import BACKEND_URL from './config';
+    
     function login() {
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
@@ -87,7 +87,7 @@
   button.disabled = true;
   button.textContent = "Logging in...";
 
-  fetch(`${BACKEND_URL}/login`, {
+  fetch(`https://back-5-bolj.onrender.com/login`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ email, password })
