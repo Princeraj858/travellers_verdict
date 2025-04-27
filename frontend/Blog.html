@@ -262,7 +262,7 @@
         card.classList.add("card");
 
         const reviewId = review._id;
-        let imagesHtml = review.images.length > 0 ? `<img src="${review.images[0]}" alt="Review Image">` : ""; // Use the full URL directly
+        let imagesHtml = review.images.length > 0 ? `<img src="https://back-5-bolj.onrender.com${review.images[0]}" alt="Review Image">` : ""; // Use the full URL directly
 
         const starsHtml = `
             <div class="stars" data-review-id="${reviewId}">
